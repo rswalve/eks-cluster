@@ -5,14 +5,12 @@
       version = "~> 4.28.0"
     }
   }
-}
-/*
   backend "s3" {
-    bucket = "mitre-name-iac"
-    key    = "terraform/"
-    region = "us-east-1"
+    bucket = "terraformstateplayground"
+    key    = "eks/eks-template"
+    region = "us-gov-west-1"
   }
-*/
+}
 
 provider "aws" {
   region = var.aws_region
